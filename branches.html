@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Government Polytechnic Kalaburgi - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9fafb;
+      color: #1f2937;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      background-color: #1f2937;
+      color: white;
+      padding: 20px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo {
+      width: 60px;
+      height: 60px;
+    }
+
+    .college-name {
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+
+    nav {
+      background-color: #374151;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 12px 0;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #facc15;
+    }
+
+    .slogan {
+      text-align: center;
+      font-style: italic;
+      font-size: 1.2em;
+      margin: 30px 0;
+      color: #4b5563;
+      font-weight: 500;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #e0f2fe, #f0fdfa);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 50px 30px;
+    }
+
+    .hero-text {
+      flex: 1 1 50%;
+      padding-right: 20px;
+    }
+
+    .hero-text h1 {
+      font-size: 2.5em;
+      margin-bottom: 15px;
+      color: #111827;
+    }
+
+    .hero-text p {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .hero-button {
+      background-color: #10b981;
+      color: #ffffff;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-weight: bold;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    .hero-button:hover {
+      background-color: #059669;
+    }
+
+    .hero-image {
+      flex: 1 1 45%;
+      text-align: center;
+    }
+
+    .hero-image img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .branches {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .branches h2 {
+      font-size: 2em;
+      margin-bottom: 30px;
+      color: #1f2937;
+    }
+
+    .branch-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .branch-card {
+      background: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      max-width: 260px;
+      transition: transform 0.3s ease, opacity 0.5s ease;
+      animation: fadeInUp 1s ease forwards;
+      opacity: 0;
+    }
+
+    .branch-card:hover {
+      transform: translateY(-5px);
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .branch-card img {
+      width: 100%;
+      height: 170px;
+      object-fit: cover;
+    }
+
+    .branch-card h3 {
+      color: #111827;
+      font-size: 1.2em;
+      margin: 12px 0 6px;
+    }
+
+    .branch-card p {
+      font-size: 0.95em;
+      color: #4b5563;
+      padding: 0 15px 20px;
+    }
+
+    .footer {
+      background-color: #1f2937;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      margin-top: 60px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        padding: 30px 20px;
+      }
+
+      .hero-text, .hero-image {
+        flex: 1 1 100%;
+        padding: 10px 0;
+      }
+
+      .branch-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="https://dtek.karnataka.gov.in/frontend/opt1/images/center_logo/kar_main_logo.png" alt="Logo" class="logo">
+      <div class="college-name">Government Polytechnic Kalaburgi</div>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Courses</a>
+    <a href="#">Admissions</a>
+    <a href="#">Faculty</a>
+    <a href="#">Contact</a>
+  </nav>
+
+
+
+  <section class="branches">
+    <h2>Departments</h2>
+    <div class="branch-grid">
+      <div class="branch-card">
+        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" alt="Computer Science Lab">
+        <h3>Computer Science</h3>
+        <p>Focus on programming, software development, and digital systems in a lab-oriented environment.</p>
+      </div>
+      <div class="branch-card">
+        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" alt="Electronics Lab">
+        <h3>Electronics & Communication</h3>
+        <p>Learn about circuits, embedded systems, and communication technologies through hands-on experiments.</p>
+      </div>
+      <div class="branch-card">
+        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" alt="Civil Engineering">
+        <h3>Civil Engineering</h3>
+        <p>Experience the world of construction, surveying, and infrastructure through site-based and lab training.</p>
+      </div>
+      <div class="branch-card">
+        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" alt="Mechanical Lab">
+        <h3>Mechanical Engineering</h3>
+        <p>Get practical knowledge of machines, thermodynamics, and manufacturing with real industrial tools.</p>
+      </div>
+      <div class="branch-card">
+        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" alt="Electrical Lab">
+        <h3>Electrical & Electronics</h3>
+        <p>Explore electrical machines, wiring, power systems, and automation used in everyday applications.</p>
+      </div>
+      <div class="branch-card">
+        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" alt="Electrical Lab">
+        <h3>Electrical & Electronics</h3>
+        <p>Explore electrical machines, wiring, power systems, and automation used in everyday applications.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    &copy; 2025 Government Polytechnic Kalaburgi | All Rights Reserved
+  </footer>
+</body>
+</html>
